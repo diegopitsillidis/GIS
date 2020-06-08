@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Open Layers Additional</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="ol.css" type="text/css" />
+		
+	</head>
+	
+	<body>
+	<h1>Open Layers Additional Map</h1>
+		<nav>
+			<a href="index.htm">Home</a><br>
+		</nav>
+		
+		<h2>COVID-19 Map</h2>
+		<p>Click on button to choose layer</p>
+		<p>Hover over marker to display data</p>
+		<div id="map_space"></div>
+		<button onclick="myFunction(confirmedLayer)">Confirmed</button>
+		<button onclick="myFunction(deathsLayer)">Deaths</button>
+		<button onclick="myFunction(recoveredLayer)">Recovered</button>
+		<div id="amount"></div>
+		
+		<script src="ol.js">
+		</script>
+		<script>
+			var layer = new ol.layer.Tile
+			({
+				source: new ol.source.OSM
+			});
+			var control = new ol.control.FullScreen();
+			var center = ol.proj.transform([-1.812, 52.443], 'EPSG:4326', 'EPSG:3857');
+			var view = new ol.View
+			({
+				center: center,
+				zoom: 6
+			});
+			var map = new ol.Map
+			({
+				target: 'map_space',
+				layers: [layer],
+				controls: [control],
+				view: view
+			});
+			var confirmedSet = 'https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/Coronavirus_2019_nCoV_Cases/FeatureServer/2/query?where=1%3D1&outFields=OBJECTID,Country_Region,Last_Update,Lat,Long_,Confirmed&outSR=4326&f=geojson';
+			var deathsSet    = 'https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/Coronavirus_2019_nCoV_Cases/FeatureServer/2/query?where=1%3D1&outFields=OBJECTID,Country_Region,Last_Update,Lat,Long_,Deaths&outSR=4326&f=geojson';
+			var recoveredSet = 'https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/Coronavirus_2019_nCoV_Cases/FeatureServer/2/query?where=1%3D1&outFields=OBJECTID,Country_Region,Last_Update,Lat,Long_,Recovered&outSR=4326&f=geojson';
+			var url = deathsSet;
+			
+			
+			//confirmed cases layer
+			var confirmedLayer = new ol.layer.Vector
+			({
+				declutter: true,
+				source: new ol.source.Vector
+				({
+					format: new ol.format.GeoJSON(),
+					url: confirmedSet
+				})
+			});
+			map.addLayer(confirmedLayer);
+			
+			//deaths layer
+			var deathsLayer = new ol.layer.Vector
+			({
+				declutter: true,
+				source: new ol.source.Vector
+				({
+					format: new ol.format.GeoJSON(),
+					url: deathsSet
+				})
+			});
+			map.addLayer(deathsLayer);
+			
+			//recoveries layer
+			var recoveredLayer = new ol.layer.Vector
+			({
+				declutter: true,
+				source: new ol.source.Vector
+				({
+					format: new ol.format.GeoJSON(),
+					url: recoveredSet
+				})
+			});
+			map.addLayer(recoveredLayer);
+			
+			hideLayers();
+			
+			function myFunction(layer) {
+				hideLayers();
+				layer.setVisible(true);
+			}
+			
+			function hideLayers() {
+				confirmedLayer.setVisible(false);
+				deathsLayer.setVisible(false);
+				recoveredLayer.setVisible(false);
+			}
+			
+			map.on('pointermove', onMouseMove);
+			
+			function onMouseMove(browserEvent) 
+			{
+				var coordinate = browserEvent.coordinate;
+				var pixel = map.getPixelFromCoordinate(coordinate);
+				var el = document.getElementById('amount');
+				el.innerHTML = '';
+				map.forEachFeatureAtPixel(pixel, function(feature) {
+					if (confirmedLayer.getVisible() == true){
+						el.innerHTML += '<p>Number of confirmed cases:</p>'+ feature.get('Confirmed') + '<br>';
+					}
+					else if (deathsLayer.getVisible() == true){
+						el.innerHTML += '<p>Number of deaths:</p>'+ feature.get('Deaths') + '<br>';
+					}
+					else if (recoveredLayer.getVisible() == true){
+						el.innerHTML += '<p>Number of recoveries:</p>'+ feature.get('Recovered') + '<br>';
+					}
+				});
+			}
+		</script>
+
+	</body>
+	
+</html>
+

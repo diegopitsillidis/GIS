@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Tutorial 16</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="ol.css" type="text/css" />
+		
+	</head>
+	
+	<body>
+	<h1>Tutorial16</h1>
+		<nav>
+			<a href="index.htm">Home</a><br>
+		</nav>
+		
+		<h2>FOSS API - OpenLayers II</h2>
+		<p>FullScreen functionality</p>
+		<div id="map_space"></div>
+		<div id="overlay" style="background-color: yellow; width: 20px; height: 20px; border-radius: 10px;"></div>
+		
+		<br></br>
+		<p>Overlay and click</p>
+		<div id="map_space2"></div>
+		<div id="overlay2" style="background-color: white; border-radius:10px; border:1px solid black; padding 5px 10px;"></div>
+		
+		<br></br>
+		<p>Event Handler</p>
+		<div id="map_space3"></div>
+		<input type="checkbox" id="layerOnOff" checked> Toggle Layer Visibility</input>
+		
+		<br></br>
+		<p>Event Handler 2</p>
+		<div id="map_space4" class="map"></div>
+		<div id="map_space5" class="map"></div>
+		
+		<br></br>
+		<p>Animation example</p>
+		<div id="map_space6" class="map"></div>
+		<button onclick="move(rome);">Move To Rome</button>
+		<button onclick="spin(rome)">Spin to Rome</button>
+		
+		<br></br>
+		<p>Overview map	example</p>
+		<div id="map_space7" class="map"></div>
+		
+		<script src="ol.js">
+		</script>
+		<script>
+		//fullscreen functionality - map 1
+			var layer = new ol.layer.Tile
+			({
+				source: new ol.source.OSM
+			});
+			var interaction = new ol.interaction.DragRotateAndZoom();
+			var control = new ol.control.FullScreen();
+			var center = ol.proj.transform([-1.812, 52.443], 'EPSG:4326', 'EPSG:3857');
+			var overlay = new ol.Overlay
+			({
+				position: center,
+				element: document.getElementById('overlay')
+			});
+			var view = new ol.View
+			({
+				center: center,
+				zoom: 6
+			});
+			var map = new ol.Map
+			({
+				target: 'map_space',
+				layers: [layer],
+				interactions: [interaction],
+				controls: [control],
+				overlays: [overlay],
+				view: view
+			});
+		
+		//overlay and click example - map 2
+			var layer2 = new ol.layer.Tile
+			({
+				source: new ol.source.OSM()
+			});
+			var center2 = ol.proj.transform([-1.812, 52.443], 'EPSG:4326', 'EPSG:3857');
+			var view2 = new ol.View
+			({
+				center: center2,
+				zoom: 6
+			});
+			var map2 = new ol.Map
+			({
+				target: 'map_space2',
+				layers: [layer2],
+				view: view2
+			});
+			
+			// create overlay object
+			var overlay2 = new ol.Overlay
+			({
+				element: document.getElementById('overlay2'),
+				positioning: 'bottom-center'
+			});
+			
+			// create click event
+			map2.on('click', function(event)
+			{
+				var coord2 = event.coordinate;
+				var degrees2 = ol.proj.transform(coord2, 'EPSG:3857', 'EPSG:4326');
+				var hdms2 = ol.coordinate.toStringHDMS(degrees2);
+				var element2 = overlay2.getElement();
+				element2.innerHTML = hdms2;
+				overlay2.setPosition(coord2);
+				map2.addOverlay(overlay2);
+			});
+			
+		//event handler example - map 3
+			var osmLayer3 = new ol.layer.Tile
+			({
+				source: new ol.source.OSM()
+			});
+			var birmingham = ol.proj.transform([-1.81185, 52.44314],'EPSG:4326', 'EPSG:3857');
+			var view3 = new ol.View
+			({
+				center: birmingham,
+				zoom: 6
+			});
+			var map3 = new ol.Map
+			({
+				target: 'map_space3'
+			});
+			map3.addLayer(osmLayer3);
+			map3.setView(view3);
+
+			var checkbox = document.querySelector('#layerOnOff');
+
+			// add event listener to layerOnOff checkbox
+			checkbox.addEventListener('change', function() {
+			  var checked = this.checked;
+			  if (checked !== osmLayer3.getVisible()) {
+				osmLayer3.setVisible(checked);
+			  }
+			});
+			// add event listner to osmLayer
+			osmLayer3.on('change:visible', function() {
+			  var visible = this.getVisible();
+			  if (visible !== checkbox.checked) {
+				checkbox.checked = visible;
+			  }
+			});
+
+		//event handler example 2 - map 4 & 5
+			var london = ol.proj.transform([-0.12755, 51.507222], 'EPSG:4326', 'EPSG:3857');
+			var osmLayer4 = new ol.layer.Tile
+			({
+				source: new ol.source.OSM()
+			});
+			var map4 = new ol.Map
+			({
+				layers: [
+					osmLayer4
+				],
+				target: 'map_space4',
+				view: new ol.View({
+					center: london,
+					zoom: 7
+				})		
+			});
+			
+			var map5 = new ol.Map
+			({
+				layers: [
+					new ol.layer.Tile({
+						source: new ol.source.OSM()
+					})
+				],
+				target: 'map_space5',
+				view: new ol.View({
+					center: london,
+					zoom: map4.getView().getZoom() - 4
+				})		
+			});
+			
+			// add event listner to map view
+			map4.getView().on('change', function() {
+				  map5.getView().setZoom(map4.getView().getZoom() - 4),
+				  map5.getView().setCenter(map4.getView().getCenter())
+			});
+			
+			// add event listner to map2 view
+			map5.getView().on('change', function() {
+				  map4.getView().setZoom(map5.getView().getZoom() + 4),
+				  map4.getView().setCenter(map5.getView().getCenter())
+			});
+		
+		//animation example - map 6
+			var layer6 = new ol.layer.Tile
+			({
+				source: new ol.source.OSM()
+			});
+			var london = ol.proj.transform([-0.12755, 51.507222], 'EPSG:4326', 'EPSG:3857');
+			var rome = ol.proj.transform([12.5, 41.9], 'EPSG:4326', 'EPSG:3857');
+			var view6 = new ol.View
+			({
+				center: london,
+				zoom: 6
+			});
+			var map6 = new ol.Map
+			({
+				target: 'map_space6',
+				layers: [layer6],
+				view: view6
+			});
+			
+			function move(location)
+			{
+				view6.animate
+				({
+					center: location,
+					duration: 2000
+				});
+			}		
+			
+			function spin(location) 
+			{
+				// Rotation animation takes the shortest arc, so animate in two parts
+				var center = view6.getCenter();
+				view6.animate
+				(
+					{
+						center: [
+						center[0] + (location[0] - center[0]) / 2,
+						center[1] + (location[1] - center[1]) / 2
+						],
+						rotation: Math.PI,
+						easing: ol.easing.easeIn
+					}, 
+					{
+						center: location,
+						rotation: 2 * Math.PI,
+						easing: ol.easing.easeOut
+					}
+				);
+			};
+		
+		//overview map example map 7
+		var london = ol.proj.transform([-0.12755, 51.507222], 'EPSG:4326', 'EPSG:3857');
+	    var osmLayer7 = new ol.layer.Tile
+		({
+				source: new ol.source.OSM()
+		});
+		
+       var map7 = new ol.Map
+		({
+			controls: ol.control.defaults().extend([
+				new ol.control.OverviewMap()
+			]),
+			layers: [
+				osmLayer7
+			],
+			target: 'map_space7',
+			view: new ol.View({
+				center: london,
+				zoom: 7
+			})
+			
+		});
+		</script>
+
+	</body>
+	
+</html>
+

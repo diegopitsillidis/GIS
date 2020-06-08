@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Tutorial 17</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="ol.css" type="text/css" />
+		
+	</head>
+	
+	<body>
+	<h1>Tutorial17</h1>
+		<nav>
+			<a href="index.htm">Home</a><br>
+		</nav>
+		
+		<h2>FOSS API - OpenLayers III</h2>
+		<p>Stamen layer</p>
+		<div id="map_space"></div>
+		
+		<br></br>
+		<p>Bing layer</p>
+		<div id="map_space2"></div>
+		
+		<br></br>
+		<p>Bing layer 2</p>
+		<div id="map_space3"></div>
+		<input type="checkbox" id="imagelayerOnOff" checked> Toggle Image Layer Visibility
+		<input type="checkbox" id="roadlayerOnOff" checked> Toggle Road Layer Visibility
+		
+		<br></br>
+		<p>WMS Geoserver</p>
+		<div id="map_space4"></div>
+		
+		<br></br>
+		<p>Using GeoJSON</p>
+		<div id="map_space5" class="map"></div>
+		
+		<br></br>
+		<p>Bing using KML</p>
+		<div id="map_space6" class="map"></div>
+		
+		<br></br>
+		<p>Interacting with vector features</p>
+		<div id="name"></div>
+		<div id="map_space7" class="map"></div>
+		
+		<br></br>
+		<p>Interacting with WMS</p>
+		<div id="info">&nbsp;</div>
+		<div id="map_space8" class="map"></div>
+		
+		<br></br>
+		<p>Custom styles</p>
+		<div id="map_space9" class="map"></div>
+
+		<script src="ol.js">
+		</script>
+		<script>
+		//stamen - map1
+			var stamenLayer = new ol.layer.Tile
+			({
+				source: new ol.source.Stamen
+				({
+					layer: 'watercolor'
+				})
+			});
+
+			var map = new ol.Map
+			({
+				layers: [stamenLayer],
+				target: 'map_space',
+				view: new ol.View
+				({
+					center: ol.proj.transform([2.35239, 48.858391], 'EPSG:4326','EPSG:3857'),
+					zoom: 12
+				})
+			});
+			
+		//bing - map2
+			var london = ol.proj.transform([-0.12755, 51.507222], 'EPSG:4326', 'EPSG:3857');
+		
+			var sourceBingMaps = new ol.source.BingMaps
+			({
+				key: 'ArfLwxqrnk9X0SYQcFZjuVL6W_L-rkOflflXkCGsNf-1pScLnbD9tdTtw2qD0tvD',
+				imagerySet: 'Road'
+			});
+			var bingMapsRoad = new ol.layer.Tile
+			({
+				source: sourceBingMaps
+			});
+			
+		
+			var map2 = new ol.Map
+			({
+				layers: [bingMapsRoad],
+				target: 'map_space2',
+				view: new ol.View
+				({
+					center: london,
+					zoom: 13
+				})
+			});
+			
+		//bing2 - map3
+		var london = ol.proj.transform([-0.12755, 51.507222], 'EPSG:4326', 'EPSG:3857');
+		
+			var sourceBingMaps = new ol.source.BingMaps
+			({
+				key: 'ArfLwxqrnk9X0SYQcFZjuVL6W_L-rkOflflXkCGsNf-1pScLnbD9tdTtw2qD0tvD',
+				imagerySet: 'Road'
+			});
+			var bingMapsRoad = new ol.layer.Tile
+			({
+				source: sourceBingMaps
+			});
+			
+			//var projBing = sourceBingMaps.getProjection();
+			//alert("here " + projBing.getCode());
+			
+			var bingMapsAerial = new ol.layer.Tile
+			({
+				source: new ol.source.BingMaps
+				({
+					key: 'ArfLwxqrnk9X0SYQcFZjuVL6W_L-rkOflflXkCGsNf-1pScLnbD9tdTtw2qD0tvD', 
+					imagerySet: 'Aerial'
+				}),
+				opacity: 0.7
+			});
+			
+			var map3 = new ol.Map
+			({
+				layers: [bingMapsRoad, bingMapsAerial],
+				target: 'map_space3',
+				view: new ol.View
+				({
+					//center: ol.proj.transform([-38, 97], 'EPSG:4326','EPSG:3857'),
+					//center: [-6655.5402445057125, 6709968.258934638],
+					center: london,
+					zoom: 13
+				})
+			});
+			
+			var checkbox = document.querySelector('#imagelayerOnOff');
+			// add event listener to imagelayerOnOff checkbox
+			checkbox.addEventListener('change', function() {
+			  var checked = this.checked;
+			  if (checked !== bingMapsAerial.getVisible()) {
+				bingMapsAerial.setVisible(checked);
+			  }
+			});
+
+			// add event listner to bingMapsAerial
+			bingMapsAerial.on('change:visible', function() {
+			  var visible = this.getVisible();
+			  if (visible !== checkbox.checked) {
+				checkbox.checked = visible;
+			  }
+			});
+			
+			var checkbox2 = document.querySelector('#roadlayerOnOff');
+			// add event listener to roadlayerOnOff checkbox
+			checkbox2.addEventListener('change', function() {
+			  var checked = this.checked;
+			  if (checked !== bingMapsRoad.getVisible()) {
+				bingMapsRoad.setVisible(checked);
+			  }
+			});
+
+			// add event listner to bingMapsAerial
+			bingMapsRoad.on('change:visible', function() {
+			  var visible = this.getVisible();
+			  if (visible !== checkbox2.checked) {
+				checkbox2.checked = visible;
+			  }
+			});
+			
+		//WMS Geoserver - map4
+		var layers = [
+        new ol.layer.Tile({
+          source: new ol.source.OSM()
+        }),
+        new ol.layer.Image({
+          extent: [-13884991, 2870341, -7455066, 6338219],
+          source: new ol.source.ImageWMS({
+            url: 'https://ahocevar.com/geoserver/wms',
+            params: {'LAYERS': 'topp:states'},
+            ratio: 1,
+            serverType: 'geoserver'
+          })
+        })
+		  ];
+		  var map4 = new ol.Map({
+			layers: layers,
+			target: 'map_space4',
+			view: new ol.View({
+			  center: [-10997148, 4569099],
+			  zoom: 4
+			})
+		});
+		
+		//geoJSON - map5
+		var osmLayer5 = new ol.layer.Tile
+			({
+				source: new ol.source.OSM()
+			}); 
+				
+			var center = ol.proj.transform([0, 0], 'EPSG:4326', 'EPSG:3857');
+			var view5 = new ol.View 
+			({
+				center: center,
+				zoom: 1
+			}); 
+						
+			var map5 = new ol.Map
+			({
+				target: 'map_space5',
+				view: view5
+			});
+			map5.addLayer(osmLayer5);
+				
+			var geoJSONLayer = new ol.layer.Vector
+			({
+				declutter: true,
+				source: new ol.source.Vector
+				({
+					format: new ol.format.GeoJSON(),
+					url: 'https://openlayers.org/en/v4.6.5/examples/data/geojson/countries.geojson'
+				})
+			});
+		map5.addLayer(geoJSONLayer);
+		
+		//KML - map6
+		  var projection = ol.proj.get('EPSG:3857');
+
+		  var raster6 = new ol.layer.Tile({
+			source: new ol.source.BingMaps({
+			  imagerySet: 'Aerial',
+			  key: 'ArfLwxqrnk9X0SYQcFZjuVL6W_L-rkOflflXkCGsNf-1pScLnbD9tdTtw2qD0tvD'
+			})
+		  });
+
+		  var vector6 = new ol.layer.Vector({
+			source: new ol.source.Vector({
+			  url: 'https://openlayers.org/en/latest/examples/data/kml/2012-02-10.kml',
+			  format: new ol.format.KML()
+			})
+		  });
+
+		  var map6 = new ol.Map({
+			layers: [raster6, vector6],
+			target: document.getElementById('map_space6'),
+			view: new ol.View({
+			  center: [876970.8463461736, 5859807.853963373],
+			  projection: projection,
+			  zoom: 10
+			})
+		  });
+		  
+		//interactive map with vector features - map 7
+		var osmLayer7 = new ol.layer.Tile
+			({
+				source: new ol.source.OSM()
+			}); 
+				
+			var center7 = ol.proj.transform([0, 0], 'EPSG:4326', 'EPSG:3857');
+			var view7 = new ol.View 
+			({
+				center: center7,
+				zoom: 1
+			}); 
+						
+			var map7 = new ol.Map
+			({
+				target: 'map_space7',
+				view: view7
+			});
+			map7.addLayer(osmLayer7);
+			
+			map7.on('pointermove', onMouseMove);
+				
+			var geoJSONLayer7 = new ol.layer.Vector
+			({
+				declutter: true,
+				source: new ol.source.Vector
+				({
+					format: new ol.format.GeoJSON(),
+					url: 'https://openlayers.org/en/v4.6.5/examples/data/geojson/countries.geojson'
+				})
+			});
+			map7.addLayer(geoJSONLayer7);
+			
+			function onMouseMove(browserEvent) 
+			{
+				var coordinate7 = browserEvent.coordinate;
+				var pixel7 = map7.getPixelFromCoordinate(coordinate7);
+				var el7 = document.getElementById('name');
+				el7.innerHTML = '';
+				map7.forEachFeatureAtPixel(pixel7, function(feature) {
+						el7.innerHTML += feature.get('name') + '<br>';
+				});
+			}
+			
+		//interacting with WMS - map 8 //unknown error
+		var wmsSource8 = new ol.source.TileWMS({
+          url: 'http://localhost:8080/geoserver/topp/wms',
+          params: {
+                   'VERSION': '1.1.1',
+                   tiled: true,
+                "LAYERS": 'topp:states',
+                "exceptions": 'application/vnd.ogc.se_inimage',
+             tilesOrigin: -124.73142200000001 + "," + 24.955967
+          }
+		  });
+		  
+		  var wmsLayer8 = new ol.layer.Tile({
+			source: wmsSource8
+		  });
+
+		  var view8 = new ol.View({
+			center: [0, 0],
+			zoom: 1
+		  });
+
+		  var map8 = new ol.Map({
+			layers: [wmsLayer8],
+			target: 'map_space8',
+			view: view8
+		  });
+
+		  map8.on('singleclick', function(evt) {
+			document.getElementById('info').innerHTML = '';
+			var viewResolution = /** @type {number} */ (view8.getResolution());
+			var url8 = wmsSource8.getGetFeatureInfoUrl(
+				evt.coordinate, viewResolution, 'EPSG:3857',
+				{'INFO_FORMAT': 'text/html'});
+			if (url8) {
+			  document.getElementById('info').innerHTML =
+				  '<iframe seamless src="' + url8 + '"></iframe>';
+				  alert('<iframe seamless src="' + url8 + '"></iframe>')
+			}
+		  });
+
+		  map8.on('pointermove', function(evt) {
+			if (evt.dragging) {
+			  return;
+			}
+			var pixel = map8.getEventPixel(evt.originalEvent);
+			var hit = map8.forEachLayerAtPixel(pixel, function() {
+			  return true;
+			});
+			map8.getTargetElement().style.cursor = hit ? 'pointer' : '';
+		  });
+
+		  
+		//styling  - map 9
+		var styles9 = 
+			[
+				new ol.style.Style
+				({
+					stroke: new ol.style.Stroke
+					({
+						color: 'red',
+						width: 5
+					})
+				})
+			];
+		var OSMLayer9 = new ol.layer.Tile
+			({
+				source: new ol.source.OSM()
+			});
+
+			var map9 = new ol.Map
+			({
+				layers: [OSMLayer9],
+				style: [styles9],
+				target: 'map_space9',
+				view: new ol.View
+				({
+					center: ol.proj.transform([2.35239, 48.858391], 'EPSG:4326','EPSG:3857'),
+					zoom: 12
+				})
+
+			});
+			
+
+		</script>
+
+	</body>
+	
+</html>
+

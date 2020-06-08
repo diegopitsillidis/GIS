@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Leaflet Additional</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="scripts.js"></script>
+		
+		<!--- links to pick up Leaflet API --->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" >
+		<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+		
+	</head>
+	
+	<body>
+	<h1>Leaflet additional maps</h1>
+		<nav>
+			<a href="index.htm">Home</a><br>
+		</nav>
+		
+		<h2>Leaflet Maps</h2>
+		<p>Popup added to location of user</p>
+		<p>Dentists of wales displayed with custom icon</p>
+		<div id = "map_space"></div>
+		
+	</body>
+	<script src="dentists.js"></script>
+	<script>
+		var map = L.map('map_space', {
+			center: [51.5, -3.4],
+			zoom:12
+		});
+		
+		if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+				var pos = {
+				  lat: position.coords.latitude,
+				  lng: position.coords.longitude
+				};
+				
+				L.popup().setLatLng(pos).setContent('Location found.').addTo(map);
+				map.panTo(pos);
+		
+			});
+		}
+		
+		var dentistIcon = L.icon({
+			iconUrl: 'Dentist-icon.png',
+			iconSize:     [25, 25], // size of the icon
+		});
+		
+		L.geoJSON(myDentists, {
+			pointToLayer: function (feature , latlng){
+				return L.marker(latlng, {icon: dentistIcon});
+			}
+		}).addTo(map);
+		
+		
+		L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map)
+	</script>
+	
+</html>
+

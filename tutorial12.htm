@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Tutorial 12</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="scripts.js"></script>
+		
+		<!--- links to pick up Leaflet API --->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" >
+		<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+		
+	</head>
+	
+	<body>
+	<h1>FOSS: the Leaflet API - II</h1>
+		<nav>
+			<a href="index.htm">Home</a><br>
+		</nav>
+		
+		<h2>Leaflet</h2>
+		<p>Open street map</p>
+		
+		<div id = "map_space"></div>
+		
+		<p>Click events</p>
+		<div id = "map_space2"></div>
+		
+		<p>Dentists</p>
+		<div id = "map_space3"></div>
+		
+		
+	</body>
+	
+	<script src="dentists.js"></script>
+	<script>
+		var map = L.map('map_space', {
+			center: [51.5, -3.4],
+			zoom:9
+		});
+		
+		
+		L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map)
+		
+		var myGeoJson = {
+			"type": "FeatureCollection",
+			"features": [
+			  {
+				"type": "Feature",
+				"geometry": {
+				  "type": "Point",
+				  "coordinates": [-3.9346,51.6427]
+				},
+				  "properties": {
+					"name": "Principality Stadium"
+				  }
+			  },
+			  {
+				"type": "Feature",
+				"geometry": {
+				  "type": "Point",
+				  "coordinates": [-3.1825,51.47806]
+				},
+				  "properties": { 
+					"name": "Liberty Stadium"
+				  }
+			  }
+			]
+		};
+		
+		var geojsonMarkerOptions = {
+			radius: 8,
+			fillColor: "#ff7800",
+			color: "#000",
+			weight: 1,
+			opacity: 1,
+			fillOpacity: 0.8
+		};
+		
+		L.geoJSON(myGeoJson, {
+			pointToLayer: function (feature , latlng){
+				return L.circleMarker(latlng, geojsonMarkerOptions);
+			}
+		}).addTo(map);
+		
+//map 2-----------------
+
+var map2 = L.map('map_space2', {
+			center: [51.5, -3.4],
+			zoom:9
+		});
+		
+		
+		L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map2)
+		
+		var myGeoJson2 = {
+			"type": "FeatureCollection",
+			"features": [
+			  {
+				"type": "Feature",
+				"geometry": {
+				  "type": "Point",
+				  "coordinates": [-3.9346,51.6427]
+				},
+				  "properties": {
+					"name": "Principality Stadium"
+				  }
+			  },
+			  {
+				"type": "Feature",
+				"geometry": {
+				  "type": "Point",
+				  "coordinates": [-3.1825,51.47806]
+				},
+				  "properties": { 
+					"name": "Liberty Stadium"
+				  }
+			  }
+			]
+		};
+		
+		
+		L.geoJSON(myGeoJson2).addTo(map2);
+		
+		var selection;
+		
+		//style for unselected feature
+		function unclickedStyle(feature) {
+			return {
+				fillColor: "#00FFFB",
+				fillOpacity: 0.6,
+				color: '#0000FF',
+				weight: 4
+			};
+		}
+		
+		//style for selected feature
+		function clickedStyle(feature) {
+			return {
+				fillColor: "#FFFF00",
+				fillOpacity: 0.6,
+				color: '#FFFF00',
+				weight: 4
+			};
+		}
+		
+		
+		//content layer to add to map
+		var contentLayer = L.geoJSON(myGeoJson2,{
+			style: unclickedStyle,
+			onEachFeature: clickOnFeature
+		}).addTo(map2)
+		
+		//function to handle click events on features
+		function clickOnFeature(feature, layer){
+			layer.on({
+				click:function(e) {
+					if (selection) {
+						contentLayer.resetStyle(selection);
+					}
+					e.target.setStyle(clickedStyle());//-----error
+					selection = e.target;
+					//stop click event propagating down to other elements
+					L.DomEvent.stopPropagation(e);
+				}
+			});
+		}
+		
+		//function to handle click event on the map
+		map2.addEventListener('click', function(e) {
+			if (selection) {
+				contentLayer.resetStyle(selection);
+				selection=null;
+			}
+		});
+
+//map 3 -----------------------------
+		var map3 = L.map('map_space3', {
+			center: [51.5, -3.4],
+			zoom:9
+		});
+		
+		
+		L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map3)
+		
+		
+		var geojsonMarkerOptions2 = {
+			radius: 6,
+			fillColor: "#0078FF",
+			color: "#000",
+			weight: 1,
+			opacity: 1,
+			fillOpacity: 0.8
+		};
+		
+		L.geoJSON(myDentists, {
+			pointToLayer: function (feature , latlng){
+				return L.circleMarker(latlng, geojsonMarkerOptions2);
+			}
+		}).addTo(map3);
+	</script>
+	
+</html>
+

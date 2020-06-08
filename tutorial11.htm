@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Tutorial 11</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="scripts.js"></script>
+		
+		<!--- links to pick up Leaflet API --->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" >
+		<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+		
+	</head>
+	
+	<body>
+	<h1>FOSS: the Leaflet API - I</h1>
+		<nav>
+			<a href="index.htm">Home</a><br>
+		</nav>
+		
+		<h2>Leaflet</h2>
+		<p>Open street map</p>
+		
+		<div id = "map_space"></div>
+		
+		<p>Hiking map</p>
+		<div id = "map_space2"></div>
+		
+		<p>Mapbox map</p>
+		<div id = "map_space3"></div>
+		
+	</body>
+	
+	<script>
+		var map = L.map('map_space', {
+			center: [51.5, -3.4],
+			zoom:9
+		});
+		
+		L.marker([51.4780, -3.1825]).addTo(map);
+		L.marker([51.7427, -3.8346]).addTo(map);
+		
+		L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map)
+		
+		//other map------------
+		var map2 = L.map('map_space2', {
+			center: [51.5, -3.4],
+			zoom:9
+		});
+		
+		L.popup().setLatLng([51.4780, -3.1825]).setContent('<p>Hello world!<br />This is a popup on a hiking map.</p>').addTo(map2);
+		L.polyline([[51.4780, -3.1825], [51.7427, -3.8346], [52.00, -3.8346]], {color: 'red'}).addTo(map2)
+		
+		L.tileLayer("https://tiles.wmflabs.org/hikebike/{z}/{x}/{y}.png").addTo(map2)
+		
+		//Mapbox map------------
+		var map3 = L.map('map_space3', {
+			center: [51.5, -3.4],
+			zoom:9
+		});
+		
+		L.polygon([[51.4780, -3.1825], [51.7427, -3.8346], [52.00, -3.8346]], {color: 'blue'}).addTo(map3)
+		
+		L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZGllZ29waXRzaWxsaWRlcyIsImEiOiJjazdoa3phY2UwYWpqM25tbnYzbDVwMGhsIn0.388jkikd26wq26IkB10jZA',
+		{
+			maxZoom:18,
+			id: 'mapbox.streets'
+		}).addTo(map3)
+		
+	</script>
+	
+</html>
+

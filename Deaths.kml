@@ -1,0 +1,2015 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="OGRGeoJSON" id="OGRGeoJSON">
+	<SimpleField name="OBJECTID" type="int"></SimpleField>
+	<SimpleField name="Province_State" type="string"></SimpleField>
+	<SimpleField name="Country_Region" type="string"></SimpleField>
+	<SimpleField name="Last_Update" type="string"></SimpleField>
+	<SimpleField name="Lat" type="float"></SimpleField>
+	<SimpleField name="Long_" type="float"></SimpleField>
+	<SimpleField name="Confirmed" type="int"></SimpleField>
+	<SimpleField name="Recovered" type="int"></SimpleField>
+	<SimpleField name="Deaths" type="int"></SimpleField>
+</Schema>
+<Folder><name>OGRGeoJSON</name>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">1</SimpleData>
+		<SimpleData name="Country_Region">Finland</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T11:13:19.000Z</SimpleData>
+		<SimpleData name="Lat">61.9241</SimpleData>
+		<SimpleData name="Long_">25.7482</SimpleData>
+		<SimpleData name="Confirmed">594</SimpleData>
+		<SimpleData name="Recovered">10</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>25.7482,61.9241</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">6</SimpleData>
+		<SimpleData name="Country_Region">Philippines</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T11:13:20.000Z</SimpleData>
+		<SimpleData name="Lat">12.8797</SimpleData>
+		<SimpleData name="Long_">121.774</SimpleData>
+		<SimpleData name="Confirmed">380</SimpleData>
+		<SimpleData name="Recovered">17</SimpleData>
+		<SimpleData name="Deaths">25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>121.774000000000115,12.8797</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">7</SimpleData>
+		<SimpleData name="Country_Region">Cyprus</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:13:18.000Z</SimpleData>
+		<SimpleData name="Lat">35.1264</SimpleData>
+		<SimpleData name="Long_">33.4299</SimpleData>
+		<SimpleData name="Confirmed">84</SimpleData>
+		<SimpleData name="Recovered">3</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>33.4299,35.1264</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">9</SimpleData>
+		<SimpleData name="Province_State">Mississippi</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T17:13:44.000Z</SimpleData>
+		<SimpleData name="Lat">32.741646</SimpleData>
+		<SimpleData name="Long_">-89.678696</SimpleData>
+		<SimpleData name="Confirmed">140</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-89.678696,32.741646</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">11</SimpleData>
+		<SimpleData name="Province_State">Anhui</SimpleData>
+		<SimpleData name="Country_Region">China</SimpleData>
+		<SimpleData name="Last_Update">2020-03-11T02:18:14.000Z</SimpleData>
+		<SimpleData name="Lat">31.8257120511073</SimpleData>
+		<SimpleData name="Long_">117.226363790413</SimpleData>
+		<SimpleData name="Confirmed">990</SimpleData>
+		<SimpleData name="Recovered">984</SimpleData>
+		<SimpleData name="Deaths">6</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>117.22636379000005,31.825712051000039</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">12</SimpleData>
+		<SimpleData name="Province_State">Kentucky</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T23:13:17.000Z</SimpleData>
+		<SimpleData name="Lat">37.66814</SimpleData>
+		<SimpleData name="Long_">-84.670067</SimpleData>
+		<SimpleData name="Confirmed">87</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-84.670067,37.66814</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">13</SimpleData>
+		<SimpleData name="Province_State">Nevada</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T03:13:24.000Z</SimpleData>
+		<SimpleData name="Lat">38.313515</SimpleData>
+		<SimpleData name="Long_">-117.055374</SimpleData>
+		<SimpleData name="Confirmed">157</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-117.055374,38.313515</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">15</SimpleData>
+		<SimpleData name="Province_State">Oklahoma</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T17:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">35.565342</SimpleData>
+		<SimpleData name="Long_">-96.928917</SimpleData>
+		<SimpleData name="Confirmed">53</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-96.928917,35.565342</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">18</SimpleData>
+		<SimpleData name="Country_Region">Greece</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T17:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">39.0742</SimpleData>
+		<SimpleData name="Long_">21.8243</SimpleData>
+		<SimpleData name="Confirmed">530</SimpleData>
+		<SimpleData name="Recovered">19</SimpleData>
+		<SimpleData name="Deaths">13</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>21.8243,39.0742</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">22</SimpleData>
+		<SimpleData name="Country_Region">Tunisia</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T15:13:45.000Z</SimpleData>
+		<SimpleData name="Lat">33.8869</SimpleData>
+		<SimpleData name="Long_">9.5375</SimpleData>
+		<SimpleData name="Confirmed">60</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>9.5375,33.8869</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">23</SimpleData>
+		<SimpleData name="Country_Region">Bangladesh</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T12:43:08.000Z</SimpleData>
+		<SimpleData name="Lat">23.685</SimpleData>
+		<SimpleData name="Long_">90.3563</SimpleData>
+		<SimpleData name="Confirmed">25</SimpleData>
+		<SimpleData name="Recovered">3</SimpleData>
+		<SimpleData name="Deaths">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>90.3563,23.685</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">27</SimpleData>
+		<SimpleData name="Province_State">Massachusetts</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">42.230171</SimpleData>
+		<SimpleData name="Long_">-71.530106</SimpleData>
+		<SimpleData name="Confirmed">529</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.530106,42.230171</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">28</SimpleData>
+		<SimpleData name="Country_Region">Colombia</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T11:13:20.000Z</SimpleData>
+		<SimpleData name="Lat">4.5709</SimpleData>
+		<SimpleData name="Long_">-74.2973</SimpleData>
+		<SimpleData name="Confirmed">210</SimpleData>
+		<SimpleData name="Recovered">3</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.2973,4.5709</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">31</SimpleData>
+		<SimpleData name="Country_Region">United Arab Emirates</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T17:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">23.4241</SimpleData>
+		<SimpleData name="Long_">53.8478</SimpleData>
+		<SimpleData name="Confirmed">153</SimpleData>
+		<SimpleData name="Recovered">38</SimpleData>
+		<SimpleData name="Deaths">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>53.8478,23.4241</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">33</SimpleData>
+		<SimpleData name="Province_State">Texas</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T03:13:24.000Z</SimpleData>
+		<SimpleData name="Lat">31.054487</SimpleData>
+		<SimpleData name="Long_">-97.563461</SimpleData>
+		<SimpleData name="Confirmed">554</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-97.563461,31.054487</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">34</SimpleData>
+		<SimpleData name="Country_Region">Panama</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T01:43:02.000Z</SimpleData>
+		<SimpleData name="Lat">8.538</SimpleData>
+		<SimpleData name="Long_">-80.7821</SimpleData>
+		<SimpleData name="Confirmed">245</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-80.7821,8.538</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">35</SimpleData>
+		<SimpleData name="Province_State">Pennsylvania</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">40.590752</SimpleData>
+		<SimpleData name="Long_">-77.209755</SimpleData>
+		<SimpleData name="Confirmed">399</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.209755,40.590752</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">36</SimpleData>
+		<SimpleData name="Country_Region">Thailand</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T11:13:18.000Z</SimpleData>
+		<SimpleData name="Lat">15.87</SimpleData>
+		<SimpleData name="Long_">100.9925</SimpleData>
+		<SimpleData name="Confirmed">599</SimpleData>
+		<SimpleData name="Recovered">44</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>100.9925,15.87</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">37</SimpleData>
+		<SimpleData name="Province_State">Georgia</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">33.040619</SimpleData>
+		<SimpleData name="Long_">-83.643074</SimpleData>
+		<SimpleData name="Confirmed">555</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">20</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-83.643074,33.040619</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">40</SimpleData>
+		<SimpleData name="Province_State">Puerto Rico</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T19:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">18.2208</SimpleData>
+		<SimpleData name="Long_">-66.5901</SimpleData>
+		<SimpleData name="Confirmed">21</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-66.5901,18.2208</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">41</SimpleData>
+		<SimpleData name="Country_Region">Ukraine</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T21:13:10.000Z</SimpleData>
+		<SimpleData name="Lat">48.3794</SimpleData>
+		<SimpleData name="Long_">31.1656</SimpleData>
+		<SimpleData name="Confirmed">47</SimpleData>
+		<SimpleData name="Recovered">1</SimpleData>
+		<SimpleData name="Deaths">3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>31.1656,48.3794</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">43</SimpleData>
+		<SimpleData name="Country_Region">Spain</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T11:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">40.4637</SimpleData>
+		<SimpleData name="Long_">-3.7492</SimpleData>
+		<SimpleData name="Confirmed">28572</SimpleData>
+		<SimpleData name="Recovered">2125</SimpleData>
+		<SimpleData name="Deaths">1720</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-3.7492,40.4637</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">45</SimpleData>
+		<SimpleData name="Country_Region">Italy</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T17:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">41.8719</SimpleData>
+		<SimpleData name="Long_">12.5674</SimpleData>
+		<SimpleData name="Confirmed">53578</SimpleData>
+		<SimpleData name="Recovered">6072</SimpleData>
+		<SimpleData name="Deaths">4825</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>12.5674,41.8719</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">50</SimpleData>
+		<SimpleData name="Province_State">Inner Mongolia</SimpleData>
+		<SimpleData name="Country_Region">China</SimpleData>
+		<SimpleData name="Last_Update">2020-03-19T01:03:02.000Z</SimpleData>
+		<SimpleData name="Lat">44.0935009913267</SimpleData>
+		<SimpleData name="Long_">113.944789458154</SimpleData>
+		<SimpleData name="Confirmed">75</SimpleData>
+		<SimpleData name="Recovered">74</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>113.944789458000059,44.093500991000042</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">54</SimpleData>
+		<SimpleData name="Country_Region">Argentina</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T15:13:44.000Z</SimpleData>
+		<SimpleData name="Lat">-38.4161</SimpleData>
+		<SimpleData name="Long_">-63.6167</SimpleData>
+		<SimpleData name="Confirmed">158</SimpleData>
+		<SimpleData name="Recovered">3</SimpleData>
+		<SimpleData name="Deaths">4</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-63.6167,-38.4161</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">55</SimpleData>
+		<SimpleData name="Country_Region">Dominican Republic</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:13:18.000Z</SimpleData>
+		<SimpleData name="Lat">18.7357</SimpleData>
+		<SimpleData name="Long_">-70.1627</SimpleData>
+		<SimpleData name="Confirmed">112</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.1627,18.7357</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">56</SimpleData>
+		<SimpleData name="Country_Region">Bosnia and Herzegovina</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T17:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">43.9159</SimpleData>
+		<SimpleData name="Long_">17.6791</SimpleData>
+		<SimpleData name="Confirmed">93</SimpleData>
+		<SimpleData name="Recovered">2</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>17.6791,43.9159</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">57</SimpleData>
+		<SimpleData name="Country_Region">Slovakia</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T20:43:02.000Z</SimpleData>
+		<SimpleData name="Lat">48.669</SimpleData>
+		<SimpleData name="Long_">19.699</SimpleData>
+		<SimpleData name="Confirmed">178</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.699,48.669</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">60</SimpleData>
+		<SimpleData name="Country_Region">Malaysia</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T11:13:17.000Z</SimpleData>
+		<SimpleData name="Lat">4.2105</SimpleData>
+		<SimpleData name="Long_">101.9758</SimpleData>
+		<SimpleData name="Confirmed">1306</SimpleData>
+		<SimpleData name="Recovered">139</SimpleData>
+		<SimpleData name="Deaths">10</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>101.9758,4.2105</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">62</SimpleData>
+		<SimpleData name="Province_State">Diamond Princess</SimpleData>
+		<SimpleData name="Country_Region">Cruise Ship</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T02:13:32.000Z</SimpleData>
+		<SimpleData name="Lat">35.4498</SimpleData>
+		<SimpleData name="Long_">139.6649</SimpleData>
+		<SimpleData name="Confirmed">712</SimpleData>
+		<SimpleData name="Recovered">325</SimpleData>
+		<SimpleData name="Deaths">8</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>139.664900000000102,35.4498</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">63</SimpleData>
+		<SimpleData name="Province_State">Shandong</SimpleData>
+		<SimpleData name="Country_Region">China</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T08:13:31.000Z</SimpleData>
+		<SimpleData name="Lat">36.3426714789712</SimpleData>
+		<SimpleData name="Long_">118.149838795037</SimpleData>
+		<SimpleData name="Confirmed">766</SimpleData>
+		<SimpleData name="Recovered">750</SimpleData>
+		<SimpleData name="Deaths">7</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>118.149838795000051,36.342671479000046</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">64</SimpleData>
+		<SimpleData name="Country_Region">Morocco</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T20:43:02.000Z</SimpleData>
+		<SimpleData name="Lat">31.7917</SimpleData>
+		<SimpleData name="Long_">-7.0926</SimpleData>
+		<SimpleData name="Confirmed">96</SimpleData>
+		<SimpleData name="Recovered">3</SimpleData>
+		<SimpleData name="Deaths">3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-7.0926,31.7917</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">66</SimpleData>
+		<SimpleData name="Country_Region">Paraguay</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T01:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">-23.4425</SimpleData>
+		<SimpleData name="Long_">-58.4438</SimpleData>
+		<SimpleData name="Confirmed">22</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-58.4438,-23.4425</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">72</SimpleData>
+		<SimpleData name="Province_State">South Carolina</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">33.856892</SimpleData>
+		<SimpleData name="Long_">-80.945007</SimpleData>
+		<SimpleData name="Confirmed">174</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-80.945007,33.856892</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">73</SimpleData>
+		<SimpleData name="Province_State">Hainan</SimpleData>
+		<SimpleData name="Country_Region">China</SimpleData>
+		<SimpleData name="Last_Update">2020-03-16T14:38:45.000Z</SimpleData>
+		<SimpleData name="Lat">19.1958639124575</SimpleData>
+		<SimpleData name="Long_">109.745335576195</SimpleData>
+		<SimpleData name="Confirmed">168</SimpleData>
+		<SimpleData name="Recovered">161</SimpleData>
+		<SimpleData name="Deaths">6</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>109.745335576000059,19.19586391200005</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">76</SimpleData>
+		<SimpleData name="Country_Region">Ecuador</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:13:13.000Z</SimpleData>
+		<SimpleData name="Lat">-1.8312</SimpleData>
+		<SimpleData name="Long_">-78.1834</SimpleData>
+		<SimpleData name="Confirmed">532</SimpleData>
+		<SimpleData name="Recovered">3</SimpleData>
+		<SimpleData name="Deaths">7</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-78.1834,-1.8312</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">78</SimpleData>
+		<SimpleData name="Country_Region">Russia</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T01:43:02.000Z</SimpleData>
+		<SimpleData name="Lat">61.524</SimpleData>
+		<SimpleData name="Long_">105.3188</SimpleData>
+		<SimpleData name="Confirmed">306</SimpleData>
+		<SimpleData name="Recovered">16</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>105.3188,61.524</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">80</SimpleData>
+		<SimpleData name="Country_Region">Gabon</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:13:18.000Z</SimpleData>
+		<SimpleData name="Lat">-0.8037</SimpleData>
+		<SimpleData name="Long_">11.6094</SimpleData>
+		<SimpleData name="Confirmed">5</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>11.6094,-0.8037</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">81</SimpleData>
+		<SimpleData name="Province_State">Virginia</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T19:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">37.769337</SimpleData>
+		<SimpleData name="Long_">-78.169968</SimpleData>
+		<SimpleData name="Confirmed">156</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-78.169968,37.769337</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">82</SimpleData>
+		<SimpleData name="Province_State">Heilongjiang</SimpleData>
+		<SimpleData name="Country_Region">China</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T04:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">47.8619962256745</SimpleData>
+		<SimpleData name="Long_">127.761544149451</SimpleData>
+		<SimpleData name="Confirmed">484</SimpleData>
+		<SimpleData name="Recovered">466</SimpleData>
+		<SimpleData name="Deaths">13</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>127.761544149000088,47.861996226000031</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">84</SimpleData>
+		<SimpleData name="Province_State">Xinjiang</SimpleData>
+		<SimpleData name="Country_Region">China</SimpleData>
+		<SimpleData name="Last_Update">2020-03-11T02:18:14.000Z</SimpleData>
+		<SimpleData name="Lat">41.1128513419168</SimpleData>
+		<SimpleData name="Long_">85.240102435218</SimpleData>
+		<SimpleData name="Confirmed">76</SimpleData>
+		<SimpleData name="Recovered">73</SimpleData>
+		<SimpleData name="Deaths">3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>85.24010243500004,41.112851342000056</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">85</SimpleData>
+		<SimpleData name="Province_State">Denmark</SimpleData>
+		<SimpleData name="Country_Region">Denmark</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T12:43:08.000Z</SimpleData>
+		<SimpleData name="Lat">56.2639</SimpleData>
+		<SimpleData name="Long_">9.5018</SimpleData>
+		<SimpleData name="Confirmed">1326</SimpleData>
+		<SimpleData name="Recovered">1</SimpleData>
+		<SimpleData name="Deaths">13</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>9.5018,56.2639</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">87</SimpleData>
+		<SimpleData name="Country_Region">Iraq</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T17:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">33.2232</SimpleData>
+		<SimpleData name="Long_">43.6793</SimpleData>
+		<SimpleData name="Confirmed">214</SimpleData>
+		<SimpleData name="Recovered">51</SimpleData>
+		<SimpleData name="Deaths">17</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.6793,33.2232</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">88</SimpleData>
+		<SimpleData name="Country_Region">Congo (Kinshasa)</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T12:43:08.000Z</SimpleData>
+		<SimpleData name="Lat">-4.0383</SimpleData>
+		<SimpleData name="Long_">21.7587</SimpleData>
+		<SimpleData name="Confirmed">23</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>21.7587,-4.0383</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">90</SimpleData>
+		<SimpleData name="Province_State">Connecticut</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">41.597782</SimpleData>
+		<SimpleData name="Long_">-72.755371</SimpleData>
+		<SimpleData name="Confirmed">223</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">4</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.755371,41.597782</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">91</SimpleData>
+		<SimpleData name="Province_State">District of Columbia</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T03:13:24.000Z</SimpleData>
+		<SimpleData name="Lat">38.897438</SimpleData>
+		<SimpleData name="Long_">-77.026817</SimpleData>
+		<SimpleData name="Confirmed">98</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.026817,38.897438</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">92</SimpleData>
+		<SimpleData name="Country_Region">Sweden</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T01:43:02.000Z</SimpleData>
+		<SimpleData name="Lat">60.1282</SimpleData>
+		<SimpleData name="Long_">18.6435</SimpleData>
+		<SimpleData name="Confirmed">1770</SimpleData>
+		<SimpleData name="Recovered">16</SimpleData>
+		<SimpleData name="Deaths">20</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.6435,60.1282</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">94</SimpleData>
+		<SimpleData name="Province_State">Illinois</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T23:13:18.000Z</SimpleData>
+		<SimpleData name="Lat">40.349457</SimpleData>
+		<SimpleData name="Long_">-88.986137</SimpleData>
+		<SimpleData name="Confirmed">753</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">6</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-88.986137,40.349457</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">95</SimpleData>
+		<SimpleData name="Province_State">Wisconsin</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T23:13:18.000Z</SimpleData>
+		<SimpleData name="Lat">44.268543</SimpleData>
+		<SimpleData name="Long_">-89.616508</SimpleData>
+		<SimpleData name="Confirmed">282</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">4</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-89.616508,44.268543</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">96</SimpleData>
+		<SimpleData name="Province_State">United Kingdom</SimpleData>
+		<SimpleData name="Country_Region">United Kingdom</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T20:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">55.3781</SimpleData>
+		<SimpleData name="Long_">-3.436</SimpleData>
+		<SimpleData name="Confirmed">5018</SimpleData>
+		<SimpleData name="Recovered">65</SimpleData>
+		<SimpleData name="Deaths">233</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-3.436,55.3781</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">97</SimpleData>
+		<SimpleData name="Country_Region">Israel</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T11:43:06.000Z</SimpleData>
+		<SimpleData name="Lat">31.0461</SimpleData>
+		<SimpleData name="Long_">34.8516</SimpleData>
+		<SimpleData name="Confirmed">883</SimpleData>
+		<SimpleData name="Recovered">36</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>34.8516,31.0461</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">101</SimpleData>
+		<SimpleData name="Province_State">Washington</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T22:43:04.000Z</SimpleData>
+		<SimpleData name="Lat">47.400902</SimpleData>
+		<SimpleData name="Long_">-121.490494</SimpleData>
+		<SimpleData name="Confirmed">1793</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">94</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-121.490494,47.400902</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">105</SimpleData>
+		<SimpleData name="Country_Region">Indonesia</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:13:13.000Z</SimpleData>
+		<SimpleData name="Lat">-0.7893</SimpleData>
+		<SimpleData name="Long_">113.9213</SimpleData>
+		<SimpleData name="Confirmed">450</SimpleData>
+		<SimpleData name="Recovered">20</SimpleData>
+		<SimpleData name="Deaths">38</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>113.9213,-0.7893</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">106</SimpleData>
+		<SimpleData name="Province_State">Quebec</SimpleData>
+		<SimpleData name="Country_Region">Canada</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T21:13:30.000Z</SimpleData>
+		<SimpleData name="Lat">52.9399</SimpleData>
+		<SimpleData name="Long_">-73.5491</SimpleData>
+		<SimpleData name="Confirmed">181</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.5491,52.9399</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">108</SimpleData>
+		<SimpleData name="Province_State">Jilin</SimpleData>
+		<SimpleData name="Country_Region">China</SimpleData>
+		<SimpleData name="Last_Update">2020-03-16T00:22:10.000Z</SimpleData>
+		<SimpleData name="Lat">43.6661021395126</SimpleData>
+		<SimpleData name="Long_">126.192329763813</SimpleData>
+		<SimpleData name="Confirmed">93</SimpleData>
+		<SimpleData name="Recovered">92</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>126.192329764000078,43.666102140000078</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">109</SimpleData>
+		<SimpleData name="Country_Region">Algeria</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">28.0339</SimpleData>
+		<SimpleData name="Long_">1.6596</SimpleData>
+		<SimpleData name="Confirmed">139</SimpleData>
+		<SimpleData name="Recovered">65</SimpleData>
+		<SimpleData name="Deaths">15</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>1.6596,28.0339</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">110</SimpleData>
+		<SimpleData name="Province_State">British Columbia</SimpleData>
+		<SimpleData name="Country_Region">Canada</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T21:13:30.000Z</SimpleData>
+		<SimpleData name="Lat">53.7267</SimpleData>
+		<SimpleData name="Long_">-127.6476</SimpleData>
+		<SimpleData name="Confirmed">424</SimpleData>
+		<SimpleData name="Recovered">4</SimpleData>
+		<SimpleData name="Deaths">10</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-127.6476,53.7267</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">113</SimpleData>
+		<SimpleData name="Province_State">Henan</SimpleData>
+		<SimpleData name="Country_Region">China</SimpleData>
+		<SimpleData name="Last_Update">2020-03-14T09:53:08.000Z</SimpleData>
+		<SimpleData name="Lat">33.8820061472366</SimpleData>
+		<SimpleData name="Long_">113.613964115943</SimpleData>
+		<SimpleData name="Confirmed">1273</SimpleData>
+		<SimpleData name="Recovered">1250</SimpleData>
+		<SimpleData name="Deaths">22</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>113.613964116000034,33.882006147000027</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">114</SimpleData>
+		<SimpleData name="Province_State">Maryland</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T23:13:18.000Z</SimpleData>
+		<SimpleData name="Lat">39.063946</SimpleData>
+		<SimpleData name="Long_">-76.802101</SimpleData>
+		<SimpleData name="Confirmed">193</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.802101,39.063946</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">115</SimpleData>
+		<SimpleData name="Country_Region">Switzerland</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T01:43:02.000Z</SimpleData>
+		<SimpleData name="Lat">46.8182</SimpleData>
+		<SimpleData name="Long_">8.2275</SimpleData>
+		<SimpleData name="Confirmed">6652</SimpleData>
+		<SimpleData name="Recovered">131</SimpleData>
+		<SimpleData name="Deaths">80</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>8.2275,46.8182</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">118</SimpleData>
+		<SimpleData name="Province_State">Cayman Islands</SimpleData>
+		<SimpleData name="Country_Region">United Kingdom</SimpleData>
+		<SimpleData name="Last_Update">2020-03-19T20:13:56.000Z</SimpleData>
+		<SimpleData name="Lat">19.3133</SimpleData>
+		<SimpleData name="Long_">-81.2546</SimpleData>
+		<SimpleData name="Confirmed">3</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-81.2546,19.3133</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">119</SimpleData>
+		<SimpleData name="Province_State">Shanghai</SimpleData>
+		<SimpleData name="Country_Region">China</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T06:13:37.000Z</SimpleData>
+		<SimpleData name="Lat">31.2019853691089</SimpleData>
+		<SimpleData name="Long_">121.449111848821</SimpleData>
+		<SimpleData name="Confirmed">394</SimpleData>
+		<SimpleData name="Recovered">328</SimpleData>
+		<SimpleData name="Deaths">4</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>121.449111849000019,31.201985369000056</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">120</SimpleData>
+		<SimpleData name="Country_Region">Guatemala</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T21:13:14.000Z</SimpleData>
+		<SimpleData name="Lat">15.7835</SimpleData>
+		<SimpleData name="Long_">-90.2308</SimpleData>
+		<SimpleData name="Confirmed">17</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-90.2308,15.7835</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">122</SimpleData>
+		<SimpleData name="Province_State">Jiangxi</SimpleData>
+		<SimpleData name="Country_Region">China</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:43:02.000Z</SimpleData>
+		<SimpleData name="Lat">27.614008270636</SimpleData>
+		<SimpleData name="Long_">115.722093542185</SimpleData>
+		<SimpleData name="Confirmed">936</SimpleData>
+		<SimpleData name="Recovered">934</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>115.722093542000039,27.614008271000046</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">126</SimpleData>
+		<SimpleData name="Country_Region">Japan</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:13:13.000Z</SimpleData>
+		<SimpleData name="Lat">36.2048</SimpleData>
+		<SimpleData name="Long_">138.2529</SimpleData>
+		<SimpleData name="Confirmed">1055</SimpleData>
+		<SimpleData name="Recovered">232</SimpleData>
+		<SimpleData name="Deaths">35</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>138.2529,36.2048</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">127</SimpleData>
+		<SimpleData name="Country_Region">Iran</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T11:13:12.000Z</SimpleData>
+		<SimpleData name="Lat">32.4279</SimpleData>
+		<SimpleData name="Long_">53.688</SimpleData>
+		<SimpleData name="Confirmed">20610</SimpleData>
+		<SimpleData name="Recovered">7635</SimpleData>
+		<SimpleData name="Deaths">1556</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>53.688,32.4279</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">129</SimpleData>
+		<SimpleData name="Province_State">Oregon</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">44.572021</SimpleData>
+		<SimpleData name="Long_">-122.070938</SimpleData>
+		<SimpleData name="Confirmed">137</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-122.070938,44.572021</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">130</SimpleData>
+		<SimpleData name="Province_State">Tianjin</SimpleData>
+		<SimpleData name="Country_Region">China</SimpleData>
+		<SimpleData name="Last_Update">2020-03-19T23:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">39.3053612117002</SimpleData>
+		<SimpleData name="Long_">117.322972903268</SimpleData>
+		<SimpleData name="Confirmed">137</SimpleData>
+		<SimpleData name="Recovered">133</SimpleData>
+		<SimpleData name="Deaths">3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>117.32297290300005,39.305361212000037</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">131</SimpleData>
+		<SimpleData name="Province_State">Kansas</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T23:13:18.000Z</SimpleData>
+		<SimpleData name="Lat">38.5266</SimpleData>
+		<SimpleData name="Long_">-96.726486</SimpleData>
+		<SimpleData name="Confirmed">57</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-96.726486,38.5266</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">133</SimpleData>
+		<SimpleData name="Province_State">Guangdong</SimpleData>
+		<SimpleData name="Country_Region">China</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:43:02.000Z</SimpleData>
+		<SimpleData name="Lat">23.3417337092088</SimpleData>
+		<SimpleData name="Long_">113.424401710676</SimpleData>
+		<SimpleData name="Confirmed">1407</SimpleData>
+		<SimpleData name="Recovered">1329</SimpleData>
+		<SimpleData name="Deaths">8</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>113.424401711000087,23.341733709000039</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">134</SimpleData>
+		<SimpleData name="Country_Region">Iceland</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T17:13:18.000Z</SimpleData>
+		<SimpleData name="Lat">64.9631</SimpleData>
+		<SimpleData name="Long_">-19.0208</SimpleData>
+		<SimpleData name="Confirmed">473</SimpleData>
+		<SimpleData name="Recovered">22</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-19.0208,64.9631</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">136</SimpleData>
+		<SimpleData name="Country_Region">Brazil</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T11:13:17.000Z</SimpleData>
+		<SimpleData name="Lat">-14.235</SimpleData>
+		<SimpleData name="Long_">-51.9253</SimpleData>
+		<SimpleData name="Confirmed">1178</SimpleData>
+		<SimpleData name="Recovered">2</SimpleData>
+		<SimpleData name="Deaths">18</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-51.9253,-14.235</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">139</SimpleData>
+		<SimpleData name="Country_Region">Slovenia</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T14:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">46.1512</SimpleData>
+		<SimpleData name="Long_">14.9955</SimpleData>
+		<SimpleData name="Confirmed">383</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>14.9955,46.1512</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">144</SimpleData>
+		<SimpleData name="Country_Region">Poland</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T20:43:02.000Z</SimpleData>
+		<SimpleData name="Lat">51.9194</SimpleData>
+		<SimpleData name="Long_">19.1451</SimpleData>
+		<SimpleData name="Confirmed">536</SimpleData>
+		<SimpleData name="Recovered">1</SimpleData>
+		<SimpleData name="Deaths">5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.1451,51.9194</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">146</SimpleData>
+		<SimpleData name="Country_Region">Austria</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">47.5162</SimpleData>
+		<SimpleData name="Long_">14.5501</SimpleData>
+		<SimpleData name="Confirmed">3021</SimpleData>
+		<SimpleData name="Recovered">9</SimpleData>
+		<SimpleData name="Deaths">8</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>14.5501,47.5162</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">147</SimpleData>
+		<SimpleData name="Province_State">New South Wales</SimpleData>
+		<SimpleData name="Country_Region">Australia</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T13:13:35.000Z</SimpleData>
+		<SimpleData name="Lat">-33.8688</SimpleData>
+		<SimpleData name="Long_">151.2093</SimpleData>
+		<SimpleData name="Confirmed">436</SimpleData>
+		<SimpleData name="Recovered">4</SimpleData>
+		<SimpleData name="Deaths">6</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>151.2093,-33.8688</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">149</SimpleData>
+		<SimpleData name="Country_Region">Chile</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:13:13.000Z</SimpleData>
+		<SimpleData name="Lat">-35.6751</SimpleData>
+		<SimpleData name="Long_">-71.543</SimpleData>
+		<SimpleData name="Confirmed">537</SimpleData>
+		<SimpleData name="Recovered">8</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.543,-35.6751</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">150</SimpleData>
+		<SimpleData name="Country_Region">Jamaica</SimpleData>
+		<SimpleData name="Last_Update">2020-03-20T14:13:11.000Z</SimpleData>
+		<SimpleData name="Lat">18.1096</SimpleData>
+		<SimpleData name="Long_">-77.2975</SimpleData>
+		<SimpleData name="Confirmed">16</SimpleData>
+		<SimpleData name="Recovered">2</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.2975,18.1096</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">152</SimpleData>
+		<SimpleData name="Province_State">Missouri</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T03:13:24.000Z</SimpleData>
+		<SimpleData name="Lat">38.456085</SimpleData>
+		<SimpleData name="Long_">-92.288368</SimpleData>
+		<SimpleData name="Confirmed">81</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-92.288368,38.456085</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">153</SimpleData>
+		<SimpleData name="Province_State">Hebei</SimpleData>
+		<SimpleData name="Country_Region">China</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T00:13:05.000Z</SimpleData>
+		<SimpleData name="Lat">38.0428</SimpleData>
+		<SimpleData name="Long_">114.5149</SimpleData>
+		<SimpleData name="Confirmed">319</SimpleData>
+		<SimpleData name="Recovered">310</SimpleData>
+		<SimpleData name="Deaths">6</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.5149,38.0428</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">154</SimpleData>
+		<SimpleData name="Province_State">Curacao</SimpleData>
+		<SimpleData name="Country_Region">Netherlands</SimpleData>
+		<SimpleData name="Last_Update">2020-03-19T08:53:03.000Z</SimpleData>
+		<SimpleData name="Lat">12.1696</SimpleData>
+		<SimpleData name="Long_">-68.99</SimpleData>
+		<SimpleData name="Confirmed">3</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-68.99,12.1696</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">157</SimpleData>
+		<SimpleData name="Country_Region">Bulgaria</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T17:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">42.7339</SimpleData>
+		<SimpleData name="Long_">25.4858</SimpleData>
+		<SimpleData name="Confirmed">163</SimpleData>
+		<SimpleData name="Recovered">3</SimpleData>
+		<SimpleData name="Deaths">3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>25.4858,42.7339</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">158</SimpleData>
+		<SimpleData name="Province_State">Hong Kong</SimpleData>
+		<SimpleData name="Country_Region">China</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T09:43:06.000Z</SimpleData>
+		<SimpleData name="Lat">22.3</SimpleData>
+		<SimpleData name="Long_">114.2</SimpleData>
+		<SimpleData name="Confirmed">317</SimpleData>
+		<SimpleData name="Recovered">100</SimpleData>
+		<SimpleData name="Deaths">4</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.2,22.3</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">159</SimpleData>
+		<SimpleData name="Country_Region">Azerbaijan</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T20:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">40.1431</SimpleData>
+		<SimpleData name="Long_">47.5769</SimpleData>
+		<SimpleData name="Confirmed">53</SimpleData>
+		<SimpleData name="Recovered">11</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>47.5769,40.1431</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">160</SimpleData>
+		<SimpleData name="Country_Region">Serbia</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T11:13:20.000Z</SimpleData>
+		<SimpleData name="Lat">44.0165</SimpleData>
+		<SimpleData name="Long_">21.0059</SimpleData>
+		<SimpleData name="Confirmed">188</SimpleData>
+		<SimpleData name="Recovered">1</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>21.0059,44.0165</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">161</SimpleData>
+		<SimpleData name="Country_Region">India</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:13:13.000Z</SimpleData>
+		<SimpleData name="Lat">20.5937</SimpleData>
+		<SimpleData name="Long_">78.9629</SimpleData>
+		<SimpleData name="Confirmed">332</SimpleData>
+		<SimpleData name="Recovered">27</SimpleData>
+		<SimpleData name="Deaths">4</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>78.9629,20.5937</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">162</SimpleData>
+		<SimpleData name="Country_Region">Pakistan</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T11:13:18.000Z</SimpleData>
+		<SimpleData name="Lat">30.3753</SimpleData>
+		<SimpleData name="Long_">69.3451</SimpleData>
+		<SimpleData name="Confirmed">646</SimpleData>
+		<SimpleData name="Recovered">5</SimpleData>
+		<SimpleData name="Deaths">3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>69.3451,30.3753</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">164</SimpleData>
+		<SimpleData name="Country_Region">Sudan</SimpleData>
+		<SimpleData name="Last_Update">2020-03-18T12:13:09.000Z</SimpleData>
+		<SimpleData name="Lat">12.8628</SimpleData>
+		<SimpleData name="Long_">30.2176</SimpleData>
+		<SimpleData name="Confirmed">2</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>30.2176,12.8628</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">165</SimpleData>
+		<SimpleData name="Province_State">Western Australia</SimpleData>
+		<SimpleData name="Country_Region">Australia</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T13:13:35.000Z</SimpleData>
+		<SimpleData name="Lat">-31.9505</SimpleData>
+		<SimpleData name="Long_">115.8605</SimpleData>
+		<SimpleData name="Confirmed">90</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>115.860500000000116,-31.9505</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">166</SimpleData>
+		<SimpleData name="Country_Region">Cuba</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T02:13:32.000Z</SimpleData>
+		<SimpleData name="Lat">21.5218</SimpleData>
+		<SimpleData name="Long_">-77.7812</SimpleData>
+		<SimpleData name="Confirmed">21</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.7812,21.5218</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">167</SimpleData>
+		<SimpleData name="Province_State">France</SimpleData>
+		<SimpleData name="Country_Region">France</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:13:13.000Z</SimpleData>
+		<SimpleData name="Lat">46.2276</SimpleData>
+		<SimpleData name="Long_">2.2137</SimpleData>
+		<SimpleData name="Confirmed">14459</SimpleData>
+		<SimpleData name="Recovered">12</SimpleData>
+		<SimpleData name="Deaths">562</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.2137,46.2276</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">168</SimpleData>
+		<SimpleData name="Country_Region">Moldova</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T17:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">47.4116</SimpleData>
+		<SimpleData name="Long_">28.3699</SimpleData>
+		<SimpleData name="Confirmed">80</SimpleData>
+		<SimpleData name="Recovered">1</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>28.3699,47.4116</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">169</SimpleData>
+		<SimpleData name="Province_State">Guangxi</SimpleData>
+		<SimpleData name="Country_Region">China</SimpleData>
+		<SimpleData name="Last_Update">2020-03-20T00:43:02.000Z</SimpleData>
+		<SimpleData name="Lat">23.8298403568635</SimpleData>
+		<SimpleData name="Long_">108.78812722508</SimpleData>
+		<SimpleData name="Confirmed">254</SimpleData>
+		<SimpleData name="Recovered">250</SimpleData>
+		<SimpleData name="Deaths">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>108.788127225000039,23.829840357000023</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">172</SimpleData>
+		<SimpleData name="Province_State">Liaoning</SimpleData>
+		<SimpleData name="Country_Region">China</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T06:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">41.2956478642686</SimpleData>
+		<SimpleData name="Long_">122.60854186375</SimpleData>
+		<SimpleData name="Confirmed">126</SimpleData>
+		<SimpleData name="Recovered">124</SimpleData>
+		<SimpleData name="Deaths">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>122.608541864000017,41.295647864000046</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">174</SimpleData>
+		<SimpleData name="Country_Region">Turkey</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T01:43:02.000Z</SimpleData>
+		<SimpleData name="Lat">38.9637</SimpleData>
+		<SimpleData name="Long_">35.2433</SimpleData>
+		<SimpleData name="Confirmed">947</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">21</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.2433,38.9637</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">177</SimpleData>
+		<SimpleData name="Province_State">Sichuan</SimpleData>
+		<SimpleData name="Country_Region">China</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:13:13.000Z</SimpleData>
+		<SimpleData name="Lat">30.6171383897493</SimpleData>
+		<SimpleData name="Long_">102.710322085654</SimpleData>
+		<SimpleData name="Confirmed">543</SimpleData>
+		<SimpleData name="Recovered">536</SimpleData>
+		<SimpleData name="Deaths">3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>102.710322086000076,30.617138390000036</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">180</SimpleData>
+		<SimpleData name="Province_State">Shaanxi</SimpleData>
+		<SimpleData name="Country_Region">China</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T01:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">35.1916533064219</SimpleData>
+		<SimpleData name="Long_">108.870143735105</SimpleData>
+		<SimpleData name="Confirmed">248</SimpleData>
+		<SimpleData name="Recovered">239</SimpleData>
+		<SimpleData name="Deaths">3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>108.870143735000056,35.191653306000035</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">181</SimpleData>
+		<SimpleData name="Country_Region">Portugal</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T13:13:30.000Z</SimpleData>
+		<SimpleData name="Lat">39.3999</SimpleData>
+		<SimpleData name="Long_">-8.2245</SimpleData>
+		<SimpleData name="Confirmed">1280</SimpleData>
+		<SimpleData name="Recovered">5</SimpleData>
+		<SimpleData name="Deaths">12</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-8.2245,39.3999</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">182</SimpleData>
+		<SimpleData name="Province_State">Indiana</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T23:13:18.000Z</SimpleData>
+		<SimpleData name="Lat">39.849426</SimpleData>
+		<SimpleData name="Long_">-86.258278</SimpleData>
+		<SimpleData name="Confirmed">128</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">4</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-86.258278,39.849426</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">183</SimpleData>
+		<SimpleData name="Province_State">South Dakota</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-20T02:43:10.000Z</SimpleData>
+		<SimpleData name="Lat">44.299782</SimpleData>
+		<SimpleData name="Long_">-99.438828</SimpleData>
+		<SimpleData name="Confirmed">14</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-99.438828,44.299782</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">185</SimpleData>
+		<SimpleData name="Country_Region">Albania</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T12:43:08.000Z</SimpleData>
+		<SimpleData name="Lat">41.1533</SimpleData>
+		<SimpleData name="Long_">20.1683</SimpleData>
+		<SimpleData name="Confirmed">76</SimpleData>
+		<SimpleData name="Recovered">2</SimpleData>
+		<SimpleData name="Deaths">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.1683,41.1533</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">188</SimpleData>
+		<SimpleData name="Country_Region">Costa Rica</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T20:43:02.000Z</SimpleData>
+		<SimpleData name="Lat">9.7489</SimpleData>
+		<SimpleData name="Long_">-83.7534</SimpleData>
+		<SimpleData name="Confirmed">117</SimpleData>
+		<SimpleData name="Recovered">2</SimpleData>
+		<SimpleData name="Deaths">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-83.7534,9.7489</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">191</SimpleData>
+		<SimpleData name="Province_State">Florida</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">27.766279</SimpleData>
+		<SimpleData name="Long_">-81.686783</SimpleData>
+		<SimpleData name="Confirmed">763</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">13</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-81.686783,27.766279</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">195</SimpleData>
+		<SimpleData name="Province_State">Gansu</SimpleData>
+		<SimpleData name="Country_Region">China</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T03:13:13.000Z</SimpleData>
+		<SimpleData name="Lat">36.0611</SimpleData>
+		<SimpleData name="Long_">103.8343</SimpleData>
+		<SimpleData name="Confirmed">134</SimpleData>
+		<SimpleData name="Recovered">113</SimpleData>
+		<SimpleData name="Deaths">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>103.8343,36.0611</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">196</SimpleData>
+		<SimpleData name="Country_Region">Peru</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T20:43:02.000Z</SimpleData>
+		<SimpleData name="Lat">-9.19</SimpleData>
+		<SimpleData name="Long_">-75.0152</SimpleData>
+		<SimpleData name="Confirmed">318</SimpleData>
+		<SimpleData name="Recovered">1</SimpleData>
+		<SimpleData name="Deaths">5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-75.0152,-9.19</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">197</SimpleData>
+		<SimpleData name="Country_Region">Ireland</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T20:43:02.000Z</SimpleData>
+		<SimpleData name="Lat">53.1424</SimpleData>
+		<SimpleData name="Long_">-7.6921</SimpleData>
+		<SimpleData name="Confirmed">785</SimpleData>
+		<SimpleData name="Recovered">5</SimpleData>
+		<SimpleData name="Deaths">3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-7.6921,53.1424</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">198</SimpleData>
+		<SimpleData name="Country_Region">Egypt</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:13:13.000Z</SimpleData>
+		<SimpleData name="Lat">26.8206</SimpleData>
+		<SimpleData name="Long_">30.8025</SimpleData>
+		<SimpleData name="Confirmed">294</SimpleData>
+		<SimpleData name="Recovered">42</SimpleData>
+		<SimpleData name="Deaths">10</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>30.8025,26.8206</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">201</SimpleData>
+		<SimpleData name="Country_Region">Burkina Faso</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:13:18.000Z</SimpleData>
+		<SimpleData name="Lat">12.2383</SimpleData>
+		<SimpleData name="Long_">-1.5616</SimpleData>
+		<SimpleData name="Confirmed">64</SimpleData>
+		<SimpleData name="Recovered">5</SimpleData>
+		<SimpleData name="Deaths">3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.5616,12.2383</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">205</SimpleData>
+		<SimpleData name="Country_Region">Mexico</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T11:13:20.000Z</SimpleData>
+		<SimpleData name="Lat">23.6345</SimpleData>
+		<SimpleData name="Long_">-102.5528</SimpleData>
+		<SimpleData name="Confirmed">251</SimpleData>
+		<SimpleData name="Recovered">4</SimpleData>
+		<SimpleData name="Deaths">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-102.5528,23.6345</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">206</SimpleData>
+		<SimpleData name="Province_State">Zhejiang</SimpleData>
+		<SimpleData name="Country_Region">China</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:43:02.000Z</SimpleData>
+		<SimpleData name="Lat">29.1831892798285</SimpleData>
+		<SimpleData name="Long_">120.093412774886</SimpleData>
+		<SimpleData name="Confirmed">1237</SimpleData>
+		<SimpleData name="Recovered">1219</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>120.093412775000047,29.183189280000079</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">207</SimpleData>
+		<SimpleData name="Province_State">New Jersey</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T19:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">40.298904</SimpleData>
+		<SimpleData name="Long_">-74.521011</SimpleData>
+		<SimpleData name="Confirmed">1327</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">16</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.521011,40.298904</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">209</SimpleData>
+		<SimpleData name="Country_Region">Croatia</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T17:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">45.1</SimpleData>
+		<SimpleData name="Long_">15.2</SimpleData>
+		<SimpleData name="Confirmed">206</SimpleData>
+		<SimpleData name="Recovered">5</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>15.2,45.1</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">212</SimpleData>
+		<SimpleData name="Province_State">Chongqing</SimpleData>
+		<SimpleData name="Country_Region">China</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T11:13:15.000Z</SimpleData>
+		<SimpleData name="Lat">30.0571758751839</SimpleData>
+		<SimpleData name="Long_">107.87398583171</SimpleData>
+		<SimpleData name="Confirmed">577</SimpleData>
+		<SimpleData name="Recovered">570</SimpleData>
+		<SimpleData name="Deaths">6</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>107.873985832000074,30.057175875000041</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">213</SimpleData>
+		<SimpleData name="Province_State">Hubei</SimpleData>
+		<SimpleData name="Country_Region">China</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T09:43:06.000Z</SimpleData>
+		<SimpleData name="Lat">30.9756403482891</SimpleData>
+		<SimpleData name="Long_">112.270692167452</SimpleData>
+		<SimpleData name="Confirmed">67800</SimpleData>
+		<SimpleData name="Recovered">59433</SimpleData>
+		<SimpleData name="Deaths">3144</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>112.270692167000107,30.97564034800007</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">220</SimpleData>
+		<SimpleData name="Country_Region">Belgium</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T11:13:12.000Z</SimpleData>
+		<SimpleData name="Lat">50.5039</SimpleData>
+		<SimpleData name="Long_">4.4699</SimpleData>
+		<SimpleData name="Confirmed">2815</SimpleData>
+		<SimpleData name="Recovered">263</SimpleData>
+		<SimpleData name="Deaths">67</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>4.4699,50.5039</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">221</SimpleData>
+		<SimpleData name="Country_Region">Mauritius</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T12:43:08.000Z</SimpleData>
+		<SimpleData name="Lat">-20.3484</SimpleData>
+		<SimpleData name="Long_">57.5522</SimpleData>
+		<SimpleData name="Confirmed">14</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>57.5522,-20.3484</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">223</SimpleData>
+		<SimpleData name="Country_Region">Martinique</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:13:18.000Z</SimpleData>
+		<SimpleData name="Lat">14.6415</SimpleData>
+		<SimpleData name="Long_">-61.0242</SimpleData>
+		<SimpleData name="Confirmed">37</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-61.0242,14.6415</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">224</SimpleData>
+		<SimpleData name="Province_State">Fujian</SimpleData>
+		<SimpleData name="Country_Region">China</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:13:13.000Z</SimpleData>
+		<SimpleData name="Lat">26.0788658351203</SimpleData>
+		<SimpleData name="Long_">117.987371739429</SimpleData>
+		<SimpleData name="Confirmed">307</SimpleData>
+		<SimpleData name="Recovered">295</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>117.987371739000082,26.078865835000045</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">225</SimpleData>
+		<SimpleData name="Province_State">Arizona</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T03:13:24.000Z</SimpleData>
+		<SimpleData name="Lat">33.729759</SimpleData>
+		<SimpleData name="Long_">-111.431221</SimpleData>
+		<SimpleData name="Confirmed">104</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-111.431221,33.729759</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">226</SimpleData>
+		<SimpleData name="Country_Region">Guyana</SimpleData>
+		<SimpleData name="Last_Update">2020-03-17T10:53:03.000Z</SimpleData>
+		<SimpleData name="Lat">4.8604</SimpleData>
+		<SimpleData name="Long_">-58.9302</SimpleData>
+		<SimpleData name="Confirmed">7</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-58.9302,4.8604</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">229</SimpleData>
+		<SimpleData name="Province_State">Louisiana</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">31.169546</SimpleData>
+		<SimpleData name="Long_">-91.867805</SimpleData>
+		<SimpleData name="Confirmed">763</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">20</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-91.867805,31.169546</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">233</SimpleData>
+		<SimpleData name="Country_Region">Lithuania</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T11:13:20.000Z</SimpleData>
+		<SimpleData name="Lat">55.1694</SimpleData>
+		<SimpleData name="Long_">23.8813</SimpleData>
+		<SimpleData name="Confirmed">105</SimpleData>
+		<SimpleData name="Recovered">1</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>23.8813,55.1694</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">235</SimpleData>
+		<SimpleData name="Province_State">Beijing</SimpleData>
+		<SimpleData name="Country_Region">China</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T05:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">40.1823809324133</SimpleData>
+		<SimpleData name="Long_">116.414172956705</SimpleData>
+		<SimpleData name="Confirmed">514</SimpleData>
+		<SimpleData name="Recovered">400</SimpleData>
+		<SimpleData name="Deaths">8</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>116.414172957,40.182380932000058</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">236</SimpleData>
+		<SimpleData name="Country_Region">Bahrain</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">26.0667</SimpleData>
+		<SimpleData name="Long_">50.5577</SimpleData>
+		<SimpleData name="Confirmed">310</SimpleData>
+		<SimpleData name="Recovered">125</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>50.5577,26.0667</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">238</SimpleData>
+		<SimpleData name="Province_State">Vermont</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T03:13:24.000Z</SimpleData>
+		<SimpleData name="Lat">44.045876</SimpleData>
+		<SimpleData name="Long_">-72.710686</SimpleData>
+		<SimpleData name="Confirmed">49</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.710686,44.045876</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">241</SimpleData>
+		<SimpleData name="Country_Region">Luxembourg</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:13:13.000Z</SimpleData>
+		<SimpleData name="Lat">49.8153</SimpleData>
+		<SimpleData name="Long_">6.1296</SimpleData>
+		<SimpleData name="Confirmed">670</SimpleData>
+		<SimpleData name="Recovered">6</SimpleData>
+		<SimpleData name="Deaths">8</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>6.1296,49.8153</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">242</SimpleData>
+		<SimpleData name="Province_State">New York</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T03:13:24.000Z</SimpleData>
+		<SimpleData name="Lat">42.165726</SimpleData>
+		<SimpleData name="Long_">-74.948051</SimpleData>
+		<SimpleData name="Confirmed">12315</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">76</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.948051,42.165726</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">245</SimpleData>
+		<SimpleData name="Province_State">Michigan</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T03:13:24.000Z</SimpleData>
+		<SimpleData name="Lat">43.326618</SimpleData>
+		<SimpleData name="Long_">-84.536095</SimpleData>
+		<SimpleData name="Confirmed">790</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">7</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-84.536095,43.326618</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">247</SimpleData>
+		<SimpleData name="Province_State">Alberta</SimpleData>
+		<SimpleData name="Country_Region">Canada</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">53.9333</SimpleData>
+		<SimpleData name="Long_">-116.5765</SimpleData>
+		<SimpleData name="Confirmed">226</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-116.5765,53.9333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">249</SimpleData>
+		<SimpleData name="Province_State">Guizhou</SimpleData>
+		<SimpleData name="Country_Region">China</SimpleData>
+		<SimpleData name="Last_Update">2020-03-18T01:53:03.000Z</SimpleData>
+		<SimpleData name="Lat">26.8153610246946</SimpleData>
+		<SimpleData name="Long_">106.874783781561</SimpleData>
+		<SimpleData name="Confirmed">146</SimpleData>
+		<SimpleData name="Recovered">144</SimpleData>
+		<SimpleData name="Deaths">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>106.874783782000065,26.815361025000072</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">259</SimpleData>
+		<SimpleData name="Province_State">Yunnan</SimpleData>
+		<SimpleData name="Country_Region">China</SimpleData>
+		<SimpleData name="Last_Update">2020-03-16T23:53:02.000Z</SimpleData>
+		<SimpleData name="Lat">24.9740090515417</SimpleData>
+		<SimpleData name="Long_">101.486994477533</SimpleData>
+		<SimpleData name="Confirmed">176</SimpleData>
+		<SimpleData name="Recovered">172</SimpleData>
+		<SimpleData name="Deaths">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>101.486994478000042,24.974009052000042</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">261</SimpleData>
+		<SimpleData name="Country_Region">Hungary</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T11:13:20.000Z</SimpleData>
+		<SimpleData name="Lat">47.1625</SimpleData>
+		<SimpleData name="Long_">19.5033</SimpleData>
+		<SimpleData name="Confirmed">131</SimpleData>
+		<SimpleData name="Recovered">7</SimpleData>
+		<SimpleData name="Deaths">4</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.5033,47.1625</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">263</SimpleData>
+		<SimpleData name="Province_State">Hunan</SimpleData>
+		<SimpleData name="Country_Region">China</SimpleData>
+		<SimpleData name="Last_Update">2020-03-14T08:33:03.000Z</SimpleData>
+		<SimpleData name="Lat">27.6104072903766</SimpleData>
+		<SimpleData name="Long_">111.708835644484</SimpleData>
+		<SimpleData name="Confirmed">1018</SimpleData>
+		<SimpleData name="Recovered">1014</SimpleData>
+		<SimpleData name="Deaths">4</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>111.708835644000089,27.610407290000069</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">264</SimpleData>
+		<SimpleData name="Country_Region">Singapore</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T13:13:30.000Z</SimpleData>
+		<SimpleData name="Lat">1.3521</SimpleData>
+		<SimpleData name="Long_">103.8198</SimpleData>
+		<SimpleData name="Confirmed">432</SimpleData>
+		<SimpleData name="Recovered">140</SimpleData>
+		<SimpleData name="Deaths">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>103.8198,1.3521</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">265</SimpleData>
+		<SimpleData name="Country_Region">San Marino</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T11:13:20.000Z</SimpleData>
+		<SimpleData name="Lat">43.9424</SimpleData>
+		<SimpleData name="Long_">12.4578</SimpleData>
+		<SimpleData name="Confirmed">160</SimpleData>
+		<SimpleData name="Recovered">4</SimpleData>
+		<SimpleData name="Deaths">20</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>12.4578,43.9424</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">267</SimpleData>
+		<SimpleData name="Province_State">California</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T03:13:24.000Z</SimpleData>
+		<SimpleData name="Lat">36.116203</SimpleData>
+		<SimpleData name="Long_">-119.681564</SimpleData>
+		<SimpleData name="Confirmed">1470</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">27</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-119.681564,36.116203</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">269</SimpleData>
+		<SimpleData name="Province_State">Netherlands</SimpleData>
+		<SimpleData name="Country_Region">Netherlands</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T14:43:04.000Z</SimpleData>
+		<SimpleData name="Lat">52.1326</SimpleData>
+		<SimpleData name="Long_">5.2913</SimpleData>
+		<SimpleData name="Confirmed">3631</SimpleData>
+		<SimpleData name="Recovered">2</SimpleData>
+		<SimpleData name="Deaths">136</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>5.2913,52.1326</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">271</SimpleData>
+		<SimpleData name="Country_Region">Ghana</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:13:18.000Z</SimpleData>
+		<SimpleData name="Lat">7.9465</SimpleData>
+		<SimpleData name="Long_">-1.0232</SimpleData>
+		<SimpleData name="Confirmed">21</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.0232,7.9465</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">272</SimpleData>
+		<SimpleData name="Country_Region">Korea, South</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T11:13:17.000Z</SimpleData>
+		<SimpleData name="Lat">35.9078</SimpleData>
+		<SimpleData name="Long_">127.7669</SimpleData>
+		<SimpleData name="Confirmed">8897</SimpleData>
+		<SimpleData name="Recovered">2909</SimpleData>
+		<SimpleData name="Deaths">104</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>127.7669,35.9078</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">274</SimpleData>
+		<SimpleData name="Province_State">Colorado</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">39.059811</SimpleData>
+		<SimpleData name="Long_">-105.311104</SimpleData>
+		<SimpleData name="Confirmed">475</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">6</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-105.311104,39.059811</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">275</SimpleData>
+		<SimpleData name="Province_State">Tennessee</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T23:13:18.000Z</SimpleData>
+		<SimpleData name="Lat">35.747845</SimpleData>
+		<SimpleData name="Long_">-86.692345</SimpleData>
+		<SimpleData name="Confirmed">371</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-86.692345,35.747845</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">278</SimpleData>
+		<SimpleData name="Province_State">Ontario</SimpleData>
+		<SimpleData name="Country_Region">Canada</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T21:13:30.000Z</SimpleData>
+		<SimpleData name="Lat">51.2538</SimpleData>
+		<SimpleData name="Long_">-85.3232</SimpleData>
+		<SimpleData name="Confirmed">377</SimpleData>
+		<SimpleData name="Recovered">6</SimpleData>
+		<SimpleData name="Deaths">3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-85.3232,51.2538</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">279</SimpleData>
+		<SimpleData name="Country_Region">Norway</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T11:13:17.000Z</SimpleData>
+		<SimpleData name="Lat">60.472</SimpleData>
+		<SimpleData name="Long_">8.4689</SimpleData>
+		<SimpleData name="Confirmed">2216</SimpleData>
+		<SimpleData name="Recovered">1</SimpleData>
+		<SimpleData name="Deaths">7</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>8.4689,60.472</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">282</SimpleData>
+		<SimpleData name="Country_Region">Germany</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T11:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">51.1657</SimpleData>
+		<SimpleData name="Long_">10.4515</SimpleData>
+		<SimpleData name="Confirmed">23129</SimpleData>
+		<SimpleData name="Recovered">239</SimpleData>
+		<SimpleData name="Deaths">93</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>10.4515,51.1657</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">283</SimpleData>
+		<SimpleData name="Country_Region">Taiwan*</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T08:13:31.000Z</SimpleData>
+		<SimpleData name="Lat">23.7</SimpleData>
+		<SimpleData name="Long_">121</SimpleData>
+		<SimpleData name="Confirmed">169</SimpleData>
+		<SimpleData name="Recovered">28</SimpleData>
+		<SimpleData name="Deaths">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>121.000000000000114,23.7</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">287</SimpleData>
+		<SimpleData name="Province_State">Ohio</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-21T19:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">40.388783</SimpleData>
+		<SimpleData name="Long_">-82.764915</SimpleData>
+		<SimpleData name="Confirmed">248</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.764915,40.388783</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">288</SimpleData>
+		<SimpleData name="Province_State">Minnesota</SimpleData>
+		<SimpleData name="Country_Region">US</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:43:03.000Z</SimpleData>
+		<SimpleData name="Lat">45.694454</SimpleData>
+		<SimpleData name="Long_">-93.900192</SimpleData>
+		<SimpleData name="Confirmed">137</SimpleData>
+		<SimpleData name="Recovered">0</SimpleData>
+		<SimpleData name="Deaths">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-93.900192,45.694454</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">290</SimpleData>
+		<SimpleData name="Country_Region">Lebanon</SimpleData>
+		<SimpleData name="Last_Update">2020-03-22T02:13:13.000Z</SimpleData>
+		<SimpleData name="Lat">33.8547</SimpleData>
+		<SimpleData name="Long_">35.8623</SimpleData>
+		<SimpleData name="Confirmed">230</SimpleData>
+		<SimpleData name="Recovered">8</SimpleData>
+		<SimpleData name="Deaths">4</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.8623,33.8547</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>
